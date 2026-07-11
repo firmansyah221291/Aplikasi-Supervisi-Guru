@@ -1,0 +1,6 @@
+{
+  "name": "Aplikasi Supervisi Guru SD",
+  "description": "Aplikasi supervisi pemantauan aktivitas guru kelas dan guru mapel SD berbasis Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

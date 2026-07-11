@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f1f5f9;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(186, 230, 253, 0.6) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgba(221, 214, 254, 0.6) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, rgba(254, 215, 170, 0.4) 0, transparent 50%);
+  background-attachment: fixed;
+  color: #1e293b;
+}
+
+/* Global Frosted Glass design system mapping */
+.bg-white.border.rounded-2xl,
+.bg-white.border.border-slate-200.rounded-2xl {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Inputs styling inside glass container */
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select, textarea {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(203, 213, 225, 0.6) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #4f46e5 !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12) !important;
+}
+
+/* Secondary table lines and background adjustments */
+.bg-slate-50, .bg-slate-50\/50, .bg-slate-50\/30, .bg-slate-100 {
+  background-color: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Custom modern scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.2);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.4);
+}
+
